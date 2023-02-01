@@ -1,0 +1,90 @@
+@import '../../../variaveis';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  gap: 2rem 0;
+  justify-content: space-evenly;
+  width: fit-content;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  border-radius: 25px;
+  border: 2px solid $roxo;
+  transition: all 0.2s ease-in-out;
+  width: 650px;
+  background-color: $preto;
+  overflow: hidden;
+
+  &:hover {
+    scale: 1.05;
+  }
+
+  &__imagem {
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+      margin: 0 1rem 0 0;
+      font-size: 1.7rem;
+      align-self: center;
+      text-decoration: none;
+      font-family: $fonte-padrao;
+      color: $roxo;
+      text-shadow: 2px 2px 2px $azul-escuro;
+      transition: color 0.3s;
+      border: 2px double $roxo;
+      padding: .5rem 1rem;
+      border-radius: 15px;
+
+      &:hover {
+        border-color: $azul-escuro;
+        color: $azul-escuro;
+        text-shadow: none;
+      }
+    }
+  }
+
+  &__textos {
+    font-family: $fonte-padrao;
+    color: $roxo;
+    text-shadow: 2px 2px 2px $azul-escuro;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-around;
+
+    h3 {
+      font-weight: unset;
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__descricao {
+    font-family: $fonte-padrao;
+    color: $roxo;
+    text-shadow: 2px 2px 2px $azul-escuro;
+    font-size: 1.15rem;
+    padding: 1em;
+  }
+
+}
