@@ -15,8 +15,8 @@
     font-family: $fonte-padrao;
     margin: 0;
     text-shadow: 2px 2px 2px $azul-escuro;
-    font-size: 4rem;
-    width: fit-content;
+    font-size: 3.4rem;
+    width: auto;
 
     & p{
       margin: 1rem 0;
@@ -28,13 +28,13 @@
     font-family: $fonte-padrao;
     margin: 0;
     text-shadow: 2px 2px 2px $azul-escuro;
-    font-size: 3rem;
+    font-size: 2rem;
     width: fit-content;
   }
 
   &__texto {
     max-width: calc((100vw / 2) + 2em);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: $roxo;
     font-family: $fonte-padrao;
     margin: 0;
