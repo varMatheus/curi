@@ -7,4 +7,16 @@
   font-size: 1.8rem;
   color: $roxo;
   text-shadow: 2px 2px 2px $azul-escuro;
+
+  @media screen and (max-width: 375px) {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 }

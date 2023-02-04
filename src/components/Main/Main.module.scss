@@ -17,6 +17,10 @@
     text-shadow: 2px 2px 2px $azul-escuro;
     font-size: 4rem;
     width: fit-content;
+
+    & p{
+      margin: 1rem 0;
+    }
   }
 
   &__sobre {
@@ -37,4 +41,47 @@
     text-shadow: 2px 2px 2px $azul-escuro;
   }
 
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+
+    &__titulo {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    &__sobre {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    &__texto {
+      font-size: 1.1rem;
+      max-width: fit-content;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    flex-direction: column;
+
+    &__titulo {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    &__sobre {
+      text-align: center;
+    }
+
+    &__texto {
+      font-size: 1.4rem;
+      max-width: fit-content;
+      text-align: center;
+    }
+  }
 }

@@ -3,4 +3,17 @@
   display: flex;
   justify-content: space-around;
   margin: 0 5rem;
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    width: 90vw;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
