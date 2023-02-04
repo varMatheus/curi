@@ -14,6 +14,7 @@ export default function Barra() {
           [styles.barra]: true,
           [styles.barra__ativa]: troca ? true : false,
         })}>
+          {!troca && <span>Links</span>}
       </div>
       <nav className={classNames({
         [styles.nav]:true,

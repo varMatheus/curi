@@ -30,24 +30,20 @@
   height: 20px;
   background-color: $roxo;
   transition: all 0.8s ease-out, background-color .3s ease-in;
-  rotate: -90deg;
+  rotate: 90deg;
   top: 120px;
   border-radius: 10px;
   display: flex;
   align-self: center;
+  justify-content: center;
+
   &:hover{
     background-color: $azul-escuro;
   }
 
-  @media screen and (max-width: 425px) {
-    left: 0;
-    rotate: -180deg;
-    top: 0;
-  }
-
   @media screen and (max-width: 768px) {
     left: 0;
-    rotate: -180deg;
+    rotate: 360deg;
     top: 0;
   }
 
